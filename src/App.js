@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Links from './conponents/Links';
 
 function App() {
+
+  let linkinfo=[
+    {linkname:"Services"},
+    {linkname:"Project"},
+    {linkname:"About"},
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="navbar">
+      <div id="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEr337NlrFU0UNoV186QV14HjhQGKrnRAJg&usqp=CAU"></img>
+      </div>
+      <div id="links">
+        {linkinfo.map((trlinks)=>(
+          <Links {...trlinks} />
+        ))}
+      </div>
+      <div id="btn_div">
+        <button id="btn1">Contact</button>
+      </div>
+    </div>
     </div>
   );
 }

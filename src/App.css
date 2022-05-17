@@ -2,6 +2,64 @@
   text-align: center;
 }
 
+#navbar{
+  border: 1px solid black;
+  height: 45px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+#navbar>div{
+  /* border: 1px solid red; */
+}
+
+#img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+#img>img{
+  height: 35px;
+  /* width: 100px; */
+}
+
+#links{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  align-items: center;
+}
+
+#links a{
+  color: white;
+}
+
+#links a:hover{
+  cursor: pointer;
+}
+
+#btn1{
+  background-color: rgb(17, 229, 229);
+  width: 80px;
+  height: 28px;
+  border-radius: 14px;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+#btn_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
